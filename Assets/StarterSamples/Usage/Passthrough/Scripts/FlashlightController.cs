@@ -53,7 +53,9 @@ public class FlashlightController : MonoBehaviour
 
         if (GetComponent<Flashlight>())
         {
-            GetComponent<Flashlight>().EnableFlashlight(false);
+            GetComponent<Flashlight>().EnableFlashlight(true);
+            StopAllCoroutines();
+            StartCoroutine(FadeLighting(new Color(0, 0, 0, 0.95f), 0.0f, 0.25f));
         }
     }
 
@@ -74,7 +76,7 @@ public class FlashlightController : MonoBehaviour
                     AlignWithHand(hands[handIndex], skeletons[handIndex]);
                 }
 
-                if (infoText) infoText.text = "Pinch to toggle flashlight";
+               if (infoText) infoText.text = "Pinch to toggle flashlight"; 
             }
             else
             {
@@ -185,7 +187,7 @@ public class FlashlightController : MonoBehaviour
     {
         float timer = 0.0f;
         Color currentColor = Camera.main.backgroundColor;
-        float currentLight = sceneLight ? sceneLight.intensity : 0;
+        float currentLight = sceneLight ? sceneLight.intensity : 0.2f;
         while (timer <= fadeTime)
         {
             timer += Time.deltaTime;
