@@ -47,7 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  zen_SceneManager: {fileID: 0}
+  prevSet: []
   nextSet: []
+  audio_id: 43000000700000009d000000e3000000
 --- !u!65 &7178022382576986923
 BoxCollider:
   m_ObjectHideFlags: 0

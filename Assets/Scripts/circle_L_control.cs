@@ -6,13 +6,17 @@ public class circle_L_control : MonoBehaviour
 {
     public int id;
     // public GameObject[] nextSet = new GameObject[5];
+    public zen_SceneManager zen_SceneManager;
 
     public List<GameObject> prevSet = new List<GameObject>();
     public List<GameObject> nextSet = new List<GameObject>();
+    public int[] audio_id = new int[4];
     
     void Start()
-    {
+    {   
+        zen_SceneManager = GameObject.FindWithTag("SceneManager").GetComponent<zen_SceneManager>();
         id = int.Parse(this.gameObject.name);
+        
     }
 
     
@@ -25,7 +29,22 @@ public class circle_L_control : MonoBehaviour
         Debug.Log(other.name);
         if (other.tag == "Player")
         {
-            
+            if (id == audio_id[0])
+            {
+                zen_SceneManager.brightCirclesOn(0);
+            }
+            else if (id == audio_id[1])
+            {
+                zen_SceneManager.brightCirclesOn(1);
+            }
+            else if (id == audio_id[2])
+            {
+                zen_SceneManager.brightCirclesOn(2);
+            }
+            else if (id == audio_id[3])
+            {
+                zen_SceneManager.brightCirclesOn(3);
+            }
             StartCoroutine(activateNext());
         }
     }
