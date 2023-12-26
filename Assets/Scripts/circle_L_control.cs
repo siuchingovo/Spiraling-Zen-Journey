@@ -51,7 +51,7 @@ public class circle_L_control : MonoBehaviour
 
     IEnumerator activateNext()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(7.5f);
 
         for (int i = 0; i < nextSet.Count; i++)
         {

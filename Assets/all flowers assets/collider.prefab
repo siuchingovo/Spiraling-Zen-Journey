@@ -163,8 +163,6 @@ MonoBehaviour:
   flowerspawn: {fileID: 5528397427431298617}
   playerdistance: {fileID: 0}
   flowerTransform: {fileID: 7460585941442722310}
-  maxScale: 1.7
-  minScale: 1
   Activationdistance: 0.5
 --- !u!1 &3851318165540042683
 GameObject:
@@ -294,17 +292,17 @@ PrefabInstance:
     - target: {fileID: 5979639104485617052, guid: 204daf441531d374098faf8f3f671a6b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.073
+      value: 0.019
       objectReference: {fileID: 0}
     - target: {fileID: 5979639104485617052, guid: 204daf441531d374098faf8f3f671a6b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.208
+      value: 0.049
       objectReference: {fileID: 0}
     - target: {fileID: 5979639104485617052, guid: 204daf441531d374098faf8f3f671a6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.315
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 5979639104485617052, guid: 204daf441531d374098faf8f3f671a6b,
         type: 3}

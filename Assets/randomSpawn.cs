@@ -9,7 +9,7 @@ public class randomSpawn : MonoBehaviour
     
     void Start()
     {
-        randomNum = Random.Range(0, 2);
+        randomNum = Random.Range(0, 3);
         Instantiate(flowers[randomNum], this.transform);
 
     }

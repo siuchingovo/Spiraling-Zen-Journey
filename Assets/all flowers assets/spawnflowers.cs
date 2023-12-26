@@ -10,8 +10,8 @@ public class spawnflowers : MonoBehaviour
     public Transform playerdistance;
     public Transform flowerTransform;
 
-    public float maxScale = 5;
-    public float minScale = 3;
+    private float maxScale = 5;
+    private float minScale = 4;
     public float Activationdistance;
     
 
