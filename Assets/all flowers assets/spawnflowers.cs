@@ -10,8 +10,8 @@ public class spawnflowers : MonoBehaviour
     public Transform playerdistance;
     public Transform flowerTransform;
 
-    public float maxScale;
-    public float minScale;
+    public float maxScale = 5;
+    public float minScale = 3;
     public float Activationdistance;
     
 
@@ -46,7 +46,7 @@ public class spawnflowers : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
        
-       if(other.tag == "Player"){
+       if(other.tag == "MainCamera"){
         flowers = true;
         
        }  
