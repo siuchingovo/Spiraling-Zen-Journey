@@ -16,6 +16,8 @@ namespace PathCreation.Examples {
 
         public List<GameObject> prev_set_temp = new List<GameObject>();
 
+        public bool spawnOnStart = false; //force not to spawn on start
+
         [Header("PathPlacer")]
         public GameObject holder;
         public float spacing = 3;
@@ -23,7 +25,7 @@ namespace PathCreation.Examples {
 
 
         void Generate () {
-            if (pathCreator != null && prefab[0] != null && prefab[1] != null && holder != null) {
+            if (pathCreator != null && prefab[0] != null && prefab[1] != null && holder != null && spawnOnStart) {
                 DestroyObjects ();
 
                 VertexPath path = pathCreator.path;

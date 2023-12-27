@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - circle
+  - SceneManager
+  - Bright_Circle
   layers:
   - Default
   - TransparentFX
