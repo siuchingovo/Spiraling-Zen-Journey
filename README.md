@@ -3,6 +3,8 @@
    - Unity Version: 2021.3.26f
    - Device: Meta Quest 3
 
+[![](https://markdown-videos-api.jorgenkh.no/youtube/4Mcsq5nG_VQ)](https://youtu.be/4Mcsq5nG_VQ)
+
 ## How to build the project in Meta Quest 3
 1. Clone the code from this repo
 2. Open the project with the correct Unity Version
